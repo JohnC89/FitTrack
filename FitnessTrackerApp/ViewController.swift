@@ -21,6 +21,11 @@ class ViewController: UIViewController {
     
     private var currentFrame: CGImage?
     
+    var isShowCalculateResults = false
+    @IBOutlet weak var finalPoints: UITextView!
+    @IBOutlet weak var resultPoints: UITextView!
+    
+    
     //declare image size and initially set image size to zero
     var imageSize = CGSize.zero
     
@@ -137,7 +142,7 @@ class ViewController: UIViewController {
         }
         
         //        print("pose cnt \(imagePoints.count): \(imagePoints)")
-        /*        DispatchQueue.main.async {
+        DispatchQueue.main.async {
          self.resultPoints.text = resultPointsStr
          self.finalPoints.text = finalPointsStr
          }
@@ -149,7 +154,6 @@ class ViewController: UIViewController {
          }
          
          }
-         */
         
         
         // MARK: - VideoCaptureDelegate
@@ -177,7 +181,7 @@ class ViewController: UIViewController {
                 //        print(confidence, label)
                 let isOverThreshold = confidence > 0.5
                 DispatchQueue.main.async {
-                    self.mov.isHidden = !isOverThreshold
+                    self.movementLabel.isHidden = !isOverThreshold
                     self.movementLabel.text = isOverThreshold ? label : ""
                 }
             }
@@ -238,8 +242,6 @@ class ViewController: UIViewController {
             }
         }
         
-    }
-    
-}
+
 
 
