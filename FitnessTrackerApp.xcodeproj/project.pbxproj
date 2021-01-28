@@ -15,6 +15,8 @@
 		3AD07A1425C1D6010099487E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3AD07A1225C1D6010099487E /* LaunchScreen.storyboard */; };
 		3AD07A1D25C1DE480099487E /* VideoCapture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AD07A1C25C1DE480099487E /* VideoCapture.swift */; };
 		3AD07A2025C347BD0099487E /* AVCaptureVideoOrientation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AD07A1F25C347BD0099487E /* AVCaptureVideoOrientation.swift */; };
+		3AD07A2325C35D1D0099487E /* Predictor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AD07A2225C35D1D0099487E /* Predictor.swift */; };
+		3AD07A2625C35D7B0099487E /* ActionTrainedModel 1.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 3AD07A2525C35D7B0099487E /* ActionTrainedModel 1.mlmodel */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,8 @@
 		3AD07A1525C1D6010099487E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3AD07A1C25C1DE480099487E /* VideoCapture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoCapture.swift; sourceTree = "<group>"; };
 		3AD07A1F25C347BD0099487E /* AVCaptureVideoOrientation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AVCaptureVideoOrientation.swift; sourceTree = "<group>"; };
+		3AD07A2225C35D1D0099487E /* Predictor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Predictor.swift; sourceTree = "<group>"; };
+		3AD07A2525C35D7B0099487E /* ActionTrainedModel 1.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = "ActionTrainedModel 1.mlmodel"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,11 +64,13 @@
 		3AD07A0625C1D6000099487E /* FitnessTrackerApp */ = {
 			isa = PBXGroup;
 			children = (
+				3AD07A2525C35D7B0099487E /* ActionTrainedModel 1.mlmodel */,
 				3AD07A0725C1D6000099487E /* AppDelegate.swift */,
 				3AD07A0925C1D6000099487E /* SceneDelegate.swift */,
 				3AD07A1C25C1DE480099487E /* VideoCapture.swift */,
 				3AD07A1F25C347BD0099487E /* AVCaptureVideoOrientation.swift */,
 				3AD07A0B25C1D6000099487E /* ViewController.swift */,
+				3AD07A2225C35D1D0099487E /* Predictor.swift */,
 				3AD07A0D25C1D6000099487E /* Main.storyboard */,
 				3AD07A1025C1D6010099487E /* Assets.xcassets */,
 				3AD07A1225C1D6010099487E /* LaunchScreen.storyboard */,
@@ -146,7 +152,9 @@
 				3AD07A2025C347BD0099487E /* AVCaptureVideoOrientation.swift in Sources */,
 				3AD07A1D25C1DE480099487E /* VideoCapture.swift in Sources */,
 				3AD07A0C25C1D6000099487E /* ViewController.swift in Sources */,
+				3AD07A2625C35D7B0099487E /* ActionTrainedModel 1.mlmodel in Sources */,
 				3AD07A0825C1D6000099487E /* AppDelegate.swift in Sources */,
+				3AD07A2325C35D1D0099487E /* Predictor.swift in Sources */,
 				3AD07A0A25C1D6000099487E /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
