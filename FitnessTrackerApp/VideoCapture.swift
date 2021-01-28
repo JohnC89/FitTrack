@@ -15,6 +15,7 @@ protocol  VideoCaptureDelegate: AnyObject {
     func videoCaptureBuffer(_ videoCapture: VideoCapture, didCaptureBuffer buffer: CMSampleBuffer)
 }
 
+
 class VideoCapture: NSObject {
     enum VideoCaptureError: Error{
         case captureSessionIsMissing
